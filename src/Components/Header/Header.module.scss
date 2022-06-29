@@ -1,0 +1,53 @@
+@import url('http://fonts.cdnfonts.com/css/wisteria');
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-section {
+    background: url('../../Assets/Images/Frame\ 42665.svg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-style: normal;
+    nav {
+        padding: 45px 98px 0px 86px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        p {
+            width: 82px;
+            word-wrap: break-word;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                padding-left: 70px;
+            }
+        }
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            margin: 0px;
+            padding: 254px 0 56px;
+            font-size: 70px;
+            width: 290px;
+            font-weight: 400;
+            word-wrap: break-word;
+            text-align: center;
+        }
+        svg {
+            width: 75px;
+            height: 75px;
+            padding-bottom: 320px;
+        }
+    }
+}
