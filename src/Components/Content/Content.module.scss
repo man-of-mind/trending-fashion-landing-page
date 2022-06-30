@@ -73,6 +73,7 @@
             @extend h1;
             padding: 80px 0 20px;
             font-size: 100px;
+            text-align: center;
         }
         hr {
             width: 256px;
@@ -80,5 +81,28 @@
             margin: 0 auto;
             margin-bottom: 92px;
         }
+        .service-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 0 130px;
+            gap: 100px 200px;
+            padding-bottom: 158px;
+        }
+    }
+}
+
+.service {
+    color: #265156;
+    h1 {
+        @extend h1;
+        text-align: left;
+        font-size: 35px;
+        line-height: 37px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
     }
 }

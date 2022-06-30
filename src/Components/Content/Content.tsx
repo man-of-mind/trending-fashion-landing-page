@@ -3,6 +3,7 @@ import FactsCard from "../Cards/FactsCard";
 import styles from './Content.module.scss';
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
+import Service from "./Service";
 
 const Content = () => {
     return (
@@ -48,6 +49,12 @@ const Content = () => {
             <div className={styles['services']}>
                 <h1>Services</h1>
                 <hr></hr>
+                <section className={styles['service-grid']}>
+                    <Service category="WEB DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
+                    <Service category="WEB DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
+                    <Service category="GRAPHICS DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
+                    <Service category="GRAPHICS DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
+                </section>
             </div>
         </div>
     );
