@@ -1,0 +1,13 @@
+.fact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px;
+    color: #FFFFFF;
+    height: 200px;
+    span {
+        font-size: 40px;
+        font-weight: 400;
+    }
+}

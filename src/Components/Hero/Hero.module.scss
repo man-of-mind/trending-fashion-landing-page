@@ -1,0 +1,24 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    article {
+        background: #E5E5E5;
+        width: 45%;
+        padding: 132px 135px 130px 83px;
+        h1 {
+            margin: 0;
+            font-weight: 400;
+            font-size: 70px;
+        }
+        p {
+            font-size: 32px;
+            margin: 0;
+        }
+    }
+    .fig {
+        width: 55%;
+        background: url('../../Assets/Images/Flower.svg');
+        background-position: center;
+        background-size: cover;
+    }
+}
