@@ -6,12 +6,17 @@ import Member from "./Member";
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
 import { membersPictures } from "../utils";
+import { ReactComponent as FullStarIcon } from "../../Assets/Icons/FullStar.svg";
+import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg";
+import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
+import { ReactComponent as ArrowRightIcon } from "../../Assets/Icons/ArrowRight.svg";
+import CEO from "../../Assets/Images/ceo.svg";
 
 
 
 const Content = () => {
-    const membersList = membersPictures.map(icon => 
-        <Member member={icon.image} name="Kerry Lorem" role="BUSINESS DEVELOPER" about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices."/>
+    const membersList = membersPictures.map((icon, index) => 
+        <Member key={index} member={icon.image} name="Kerry Lorem" role="BUSINESS DEVELOPER" about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices."/>
     );
 
     return (
@@ -73,6 +78,33 @@ const Content = () => {
                 <div className={styles['members-grid']}>
                     {membersList}
                 </div>
+            </div>
+            <div className={styles['reviews']}>
+                <h1>Cool Reviews</h1>
+                <p>We have an impressive collection of outstanding products
+                    for you and your family.
+                </p>
+                <figure>
+                    <FullStarIcon />
+                    <FullStarIcon />
+                    <FullStarIcon />
+                    <FullStarIcon />
+                    <HalfStarIcon style={{paddingRight: '0'}}/>
+                </figure>
+                <section className={styles['ceo-review']}>
+                    <ArrowLeftIcon />
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend 
+                            ultricies urna nunc donec ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices.
+                        </p>
+                        <figure>
+                            <img src={CEO} alt="ceo inspiro" />
+                            <figcaption>Janet Jason</figcaption>
+                        </figure>
+                    </article>
+                    <ArrowRightIcon />
+                </section>
             </div>
         </div>
     );
