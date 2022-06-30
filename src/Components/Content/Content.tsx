@@ -1,11 +1,19 @@
 import React from "react";
 import FactsCard from "../Cards/FactsCard";
 import styles from './Content.module.scss';
+import Service from "./Service";
+import Member from "./Member";
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
-import Service from "./Service";
+import { membersPictures } from "../utils";
+
+
 
 const Content = () => {
+    const membersList = membersPictures.map(icon => 
+        <Member member={icon.image} name="Kerry Lorem" role="BUSINESS DEVELOPER" about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices."/>
+    );
+
     return (
         <div className={styles['content']}>
             <h1>FACTS &#38; FIGURES</h1>
@@ -55,6 +63,16 @@ const Content = () => {
                     <Service category="GRAPHICS DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
                     <Service category="GRAPHICS DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
                 </section>
+            </div>
+            <div className={styles['team-members']}>
+                <h1>Our Team</h1>
+                <hr></hr>
+                <p>We have an impressive team of professionals
+                    and seasoned business experts.
+                </p>
+                <div className={styles['members-grid']}>
+                    {membersList}
+                </div>
             </div>
         </div>
     );

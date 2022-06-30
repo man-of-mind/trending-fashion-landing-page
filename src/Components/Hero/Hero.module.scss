@@ -1,6 +1,7 @@
 .hero {
     display: flex;
     justify-content: space-between;
+    color: #265156;
     article {
         background: #E5E5E5;
         width: 45%;
@@ -12,6 +13,7 @@
         }
         p {
             font-size: 32px;
+            line-height: 47px;
             margin: 0;
         }
     }

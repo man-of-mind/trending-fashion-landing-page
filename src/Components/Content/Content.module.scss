@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 119px 0 0px;
+    color: #265156;
     h1 {
         margin: 0;
         font-weight: 400;
@@ -51,7 +52,6 @@
             }
             .about-company {
                 display: block;
-                color: #265156;
                 line-height: 33px;
                 padding: 70px 0px 20px;
                 h3 {
@@ -89,6 +89,39 @@
             padding-bottom: 158px;
         }
     }
+    .team-members {
+        background: #E5E5E5;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 380px;
+        h1 {
+            font-size: 100px;
+            padding-bottom: 23px;
+        }
+        hr {
+            margin: 0;
+            border: 1px solid #133639;
+            width: 256px;
+        }
+        p {
+            padding-top: 50px;
+            font-size: 24px;
+            line-height: 39px;
+            width: 477px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .members-grid {
+            padding: 0 136px;
+            display: grid;
+            gap: 154px 54px;
+            width: calc(100vw - 242px);
+            grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+        }
+    }
 }
 
 .service {
@@ -104,5 +137,36 @@
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.03em;
+    }
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-size: 24px;
+        padding-top: 42px;
+        padding-bottom: 15px;
+    }
+    small {
+        font-size: 16px;
+        padding-bottom: 14px;
+        opacity: 0.5;
+    }
+    .detail {
+        padding-top: 0;
+        text-align: center;
+        line-height: 29px;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 43px;
+        svg {
+            padding-right: 40px;
+        }
     }
 }
