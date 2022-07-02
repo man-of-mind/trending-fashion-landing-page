@@ -5,17 +5,22 @@
     align-items: center;
     padding: 119px 0 0px;
     color: #265156;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     h1 {
         margin: 0;
         font-weight: 400;
         font-size: 60px;
         padding-bottom: 136px;
     }
-    section {
+    .facts-card {
         display: grid;
-        grid-template-columns: 30% 30% 30%;
-        column-gap: 50px;
         padding-bottom: 247px;
+        grid-auto-flow: column;
+        grid-auto-columns: 30%;
+        gap: 50px;
+        padding-left: 50px;
     }
     .product {
         margin-right: auto;
@@ -150,7 +155,6 @@
         .ceo-review {
             display: flex;
             align-items: center;
-            width: 100%;
             justify-content: space-between;
             padding: 0;
             article {
@@ -168,6 +172,9 @@
                 figure {
                     display: flex;
                     align-items: center;
+                    img {
+                        display: block;
+                    }
                     figcaption {
                         padding-left: 43px;
                         span {
@@ -182,6 +189,10 @@
             }
         }
     }
+}
+
+.content::-webkit-scrollbar {
+    display: none;
 }
 
 .service {

@@ -4,7 +4,7 @@ import styles from './Cards.module.scss';
 interface Props {
     bgColor: string,
     total: string,
-    category: string
+    category: string,
 }
 
 const FactsCard:React.FC<Props> = ({bgColor, total, category}) => {
