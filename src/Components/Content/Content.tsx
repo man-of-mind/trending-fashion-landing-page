@@ -100,7 +100,10 @@ const Content = () => {
                         </p>
                         <figure>
                             <img src={CEO} alt="ceo inspiro" />
-                            <figcaption>Janet Jason</figcaption>
+                            <figcaption>
+                                <span>Janet Jason</span>
+                                <small>CEO Inspiro</small>
+                            </figcaption>
                         </figure>
                     </article>
                     <ArrowRightIcon />

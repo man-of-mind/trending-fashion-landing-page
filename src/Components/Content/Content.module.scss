@@ -150,9 +150,9 @@
         .ceo-review {
             display: flex;
             align-items: center;
-            width: calc(100vw - 392px);
-            justify-content: space-evenly;
-            padding: 0 196px;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0;
             article {
                 display: flex;
                 flex-direction: column;
@@ -163,10 +163,21 @@
                     padding: 0;
                     color: #171C54;
                     line-height: 29px;
+                    padding-bottom: 32px;
                 }
                 figure {
                     display: flex;
                     align-items: center;
+                    figcaption {
+                        padding-left: 43px;
+                        span {
+                            display: block;
+                            padding-bottom: 5px;
+                        }
+                        small {
+                            color: rgba(23, 28, 84, 0.5);
+                        }
+                    }
                 }
             }
         }
