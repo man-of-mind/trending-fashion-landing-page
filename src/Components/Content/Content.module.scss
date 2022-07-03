@@ -94,6 +94,47 @@
             padding-bottom: 158px;
         }
     }
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        background: #E5E5E5;
+        width: 100vw;
+        padding: 198px 0px 0px 0px;
+        h1 {
+            font-size: 100px;
+            padding-bottom: 23px;
+            padding-left: 140px;
+        }
+        hr {
+            border: 1px solid #133639;
+            width: 256px;
+            margin: 0 0 75px 150px;
+        }
+        .section-one {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 36%;
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overscroll-behavior-inline: contain;
+            width: 100vw;
+            figure {
+                border-radius: 13px;
+                margin: 0 27px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .section-one::-webkit-scrollbar {
+            display: none;
+        }
+        .section-two {
+            @extend .section-one;
+            padding-top: 20px;
+        }
+    }
     .team-members {
         background: #E5E5E5;
         width: 100%;
@@ -101,6 +142,7 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 380px;
+        padding-top: 322px;
         h1 {
             font-size: 100px;
             padding-bottom: 23px;

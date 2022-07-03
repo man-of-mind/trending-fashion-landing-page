@@ -11,6 +11,8 @@ import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg"
 import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
 import { ReactComponent as ArrowRightIcon } from "../../Assets/Icons/ArrowRight.svg";
 import CEO from "../../Assets/Images/ceo.svg";
+import FlowerGallery1 from "../../Assets/Images/FlowerA1.svg";
+import FlowerGallery2 from "../../Assets/Images/FlowerB3.svg";
 
 
 
@@ -67,6 +69,38 @@ const Content = () => {
                     <Service category="WEB DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
                     <Service category="GRAPHICS DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
                     <Service category="GRAPHICS DESIGN" detail="We help your businesses achieve outstanding solutions by applying industry standard tools and solutions"/>
+                </section>
+            </div>
+            <div className={styles['gallery']}>
+                <h1>Gallery</h1>
+                <hr></hr>
+                <section className={styles['section-one']}>
+                    <figure>
+                        <img src={FlowerGallery1} alt="flower gallery" />
+                    </figure>
+                    <figure>
+                        <img src={FlowerGallery1} alt="flower gallery" />
+                    </figure>
+                    <figure>
+                        <img src={FlowerGallery1} alt="flower gallery" />
+                    </figure>
+                    <figure>
+                        <img src={FlowerGallery1} alt="flower gallery" />
+                    </figure>
+                </section>
+                <section className={styles['section-two']}>
+                    <figure>
+                        <img src={FlowerGallery2} alt="flower gallery" />
+                    </figure>
+                    <figure>
+                        <img src={FlowerGallery2} alt="flower gallery" />
+                    </figure>
+                    <figure>
+                        <img src={FlowerGallery2} alt="flower gallery" />
+                    </figure>
+                    <figure>
+                        <img src={FlowerGallery2} alt="flower gallery" />
+                    </figure>
                 </section>
             </div>
             <div className={styles['team-members']}>
