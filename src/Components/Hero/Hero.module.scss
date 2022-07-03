@@ -11,6 +11,11 @@
             font-weight: 400;
             font-size: 70px;
         }
+        hr {
+            width: 256px;
+            border: 1px solid #000000;
+            margin: 46px 0;
+        }
         p {
             font-size: 32px;
             line-height: 47px;
@@ -22,5 +27,37 @@
         background: url('../../Assets/Images/Flower.svg');
         background-position: center;
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .hero {
+        padding: 59px 34px 94px 34px;
+        background: #E5E5E5;
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            width: auto;
+            h1 {
+                font-size: 40px;
+                line-height: 43px;
+            }
+            hr {
+                width: 103px;
+                margin: 38px 0;
+            }
+            p {
+                font-size: 24px;
+                line-height: 50px;
+                text-align: center;
+                letter-spacing: 0.03em;
+            }
+        }
+        .fig {
+            display: none;
+        }
     }
 }
