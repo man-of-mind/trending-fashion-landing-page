@@ -142,7 +142,7 @@ const Content = () => {
                     <HalfStarIcon style={{paddingRight: '0'}}/>
                 </figure>
                 <section className={styles['ceo-review']}>
-                    <ArrowLeftIcon />
+                    <ArrowLeftIcon className={styles['arrow-left']} />
                     <article>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend 
                             ultricies urna nunc donec ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -156,7 +156,7 @@ const Content = () => {
                             </figcaption>
                         </figure>
                     </article>
-                    <ArrowRightIcon />
+                    <ArrowRightIcon className={styles['arrow-right']} />
                 </section>
             </div>
         </div>

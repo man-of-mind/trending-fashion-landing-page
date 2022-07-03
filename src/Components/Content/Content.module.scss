@@ -208,7 +208,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0;
+            width: 100vw;
+            .arrow-left {
+                padding-left: 196px;
+            }
+            .arrow-right {
+                padding-right: 196px;
+            }
             article {
                 display: flex;
                 flex-direction: column;
@@ -426,6 +432,48 @@
             }
             .members-grid {
                 display: none;
+            }
+        }
+        .reviews {
+            padding: 67px 18px 0px;
+            h1 {
+                font-size: 40px;
+                padding-bottom: 36px;
+            }
+            p {
+                font-size: 16px;
+                width: 273px;
+                line-height: 26px;
+            }
+            .ceo-review {
+                .arrow-left {
+                    padding-left: 18px;
+                }
+                .arrow-right {
+                    padding-right: 18px;
+                }
+                article {
+                    p {
+                        font-size: 14px;
+                        line-height: 23px;
+                        padding-bottom: 0;
+                    }
+                    figure {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        figcaption {
+                            padding-left: 15px;
+                            span {
+                                font-size: 14px;
+                            }
+                            small {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
