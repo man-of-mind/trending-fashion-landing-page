@@ -30,6 +30,9 @@ body {
                 padding-left: 70px;
             }
         }
+        i {
+            display: none;
+        }
     }
     section {
         display: flex;
@@ -49,6 +52,36 @@ body {
             width: 75px;
             height: 75px;
             padding-bottom: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .header-section {
+        nav {
+            padding: 36px 52px 240px 34px;
+            p {
+                font-size: 14px;
+                line-height: 15px;
+            }
+            ul {
+                display: none;
+            }
+            i {
+                display: inline-block;
+            }
+        }
+        section {
+            h1 {
+                padding: 0px 0px 122px 0px;
+                font-size: 64px;
+                line-height: 68px;
+            }
+            svg {
+                height: 50px;
+                width: 50px;
+                padding-bottom: 455px;
+            }
         }
     }
 }
