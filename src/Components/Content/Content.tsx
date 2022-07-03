@@ -47,6 +47,8 @@ const Content = () => {
                         </p>
                         <button>View</button>
                     </section>
+                </div>
+                <div className={styles['grid-container-2']}>
                     <section className={styles['about-company']}>
                     <h3>Something Great About your company </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
