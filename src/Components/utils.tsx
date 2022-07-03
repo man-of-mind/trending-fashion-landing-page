@@ -25,3 +25,18 @@ export const membersPictures = [
         image: Member6
     }
 ]
+
+export const membersMobilePictures = [
+    {
+        image: Member1,
+        about: 'Tope is an amazing product manager and helps us improve our team efficiency by 50%' 
+    },
+    {
+        image: Member2,
+        about: 'Talk about bring professional to word professional. Highly recommend'
+    },
+    {
+        image: Member3,
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices.'
+    }
+]

@@ -168,6 +168,9 @@
             align-items: center;
             text-align: center;
         }
+        .mobile-grid {
+            display: none;
+        }
         .members-grid {
             padding: 0 136px;
             display: grid;
@@ -244,6 +247,53 @@
     display: none;
 }
 
+.service {
+    color: #265156;
+    h1 {
+        @extend h1;
+        text-align: left;
+        font-size: 35px;
+        line-height: 37px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+    }
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-size: 24px;
+        padding-top: 42px;
+        padding-bottom: 15px;
+    }
+    small {
+        font-size: 16px;
+        padding-bottom: 14px;
+        opacity: 0.5;
+    }
+    .detail {
+        padding-top: 0;
+        text-align: center;
+        line-height: 29px;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 43px;
+        svg {
+            padding-right: 40px;
+        }
+    }
+}
+
 @media screen and (max-width: 678px) {
     .content {
         padding: 58px 30px 119px 30px;
@@ -313,52 +363,95 @@
                 }
             }
         }
+        .services {
+            h1 {
+                font-size: 40px;
+                line-height: 43px;
+                padding: 75px 0px 22px;
+            }
+            hr {
+                width: 103px;
+                margin-bottom: 54px;
+            }
+            .service-grid {
+                grid-template-columns: auto;
+                padding: 0 20px 78px;
+                gap: 75px;
+            }
+        }
+        .gallery {
+            justify-content: center;
+            align-items: center;
+            padding: 112px 0px 0px;
+            h1 {
+                font-size: 40px;
+                padding: 0 0 22px;
+            }
+            hr {
+                width: 103px;
+                margin: 0 0 79px 0;
+            }
+            .section-one {
+                grid-auto-columns: 80%;
+                figure {
+                    margin: 0 15px;
+                }
+            }
+        }
+        .team-members {
+            width: 100vw;
+            padding: 260px 0px 238px;
+            h1 {
+                font-size: 45px;
+                line-height: 48px;
+                padding-bottom: 20px;
+            }
+            hr {
+                width: 103px;
+            }
+            p {
+                padding-top: 20px;
+                width: 305px;
+            }
+            .mobile-grid {
+                padding: 0 37px;
+                width: 100vw;
+                display: grid;
+                grid-auto-flow: row;
+                gap: 50px;
+                .mobile-members-grid {
+                    display: grid;
+                    gap: 50px;
+                }
+            }
+            .members-grid {
+                display: none;
+            }
+        }
     }
-}
-
-.service {
-    color: #265156;
-    h1 {
-        @extend h1;
-        text-align: left;
-        font-size: 35px;
-        line-height: 37px;
-    }
-    p {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 0.03em;
-    }
-}
-
-.team-member {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    span {
-        font-size: 24px;
-        padding-top: 42px;
-        padding-bottom: 15px;
-    }
-    small {
-        font-size: 16px;
-        padding-bottom: 14px;
-        opacity: 0.5;
-    }
-    .detail {
-        padding-top: 0;
-        text-align: center;
-        line-height: 29px;
-    }
-    .social-icons {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 43px;
+    .service {
         svg {
-            padding-right: 40px;
+            width: 54px;
+            height: 54px;
+        }
+        h1 {
+            padding-top: 23px;
+            font-size: 26px;
+            line-height: 29px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 23px;
+            margin: 0;
+        }
+    }
+    .team-member {
+        img {
+            border-radius: 50%;
+            margin: auto;
+        }
+        .detail {
+            padding: 0 37px;
         }
     }
 }

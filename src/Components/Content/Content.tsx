@@ -5,7 +5,7 @@ import Service from "./Service";
 import Member from "./Member";
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
-import { membersPictures } from "../utils";
+import { membersPictures, membersMobilePictures } from "../utils";
 import { ReactComponent as FullStarIcon } from "../../Assets/Icons/FullStar.svg";
 import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg";
 import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
@@ -19,6 +19,10 @@ import FlowerGallery2 from "../../Assets/Images/FlowerB3.svg";
 const Content = () => {
     const membersList = membersPictures.map((icon, index) => 
         <Member key={index} member={icon.image} name="Kerry Lorem" role="BUSINESS DEVELOPER" about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices."/>
+    );
+
+    const mobileMembersList = membersMobilePictures.map((member, index) => 
+        <Member key={index} member={member.image} name="Kerry Lorem" role="BUSINESS DEVELOPER" about={member.about}/>
     );
 
     return (
@@ -114,6 +118,15 @@ const Content = () => {
                 </p>
                 <div className={styles['members-grid']}>
                     {membersList}
+                </div>
+                <div className={styles['mobile-grid']}>
+                    <div className={styles['mobile-members-grid']}>
+                        {mobileMembersList}
+                    </div>
+                
+                    <div className={styles['mobile-members-grid']}>
+                        {mobileMembersList}
+                    </div>
                 </div>
             </div>
             <div className={styles['reviews']}>
