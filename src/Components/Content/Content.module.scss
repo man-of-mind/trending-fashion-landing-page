@@ -12,15 +12,19 @@
         margin: 0;
         font-weight: 400;
         font-size: 60px;
-        padding-bottom: 136px;
+        padding-bottom: 40px;
+    }
+    hr {
+        margin: 0;
+        border: 1px solid #133639;
+        width: 256px;
     }
     .facts-card {
         display: grid;
-        padding-bottom: 247px;
+        padding: 136px 0px 247px 50px;
         grid-auto-flow: column;
         grid-auto-columns: 30%;
         gap: 50px;
-        padding-left: 50px;
     }
     .product {
         margin-right: auto;
@@ -235,6 +239,39 @@
 
 .content::-webkit-scrollbar {
     display: none;
+}
+
+@media screen and (max-width: 678px) {
+    .content {
+        padding: 58px 30px 119px 30px;
+        h1 {
+            font-size: 30px;
+            line-height: 43px;
+        }
+        hr {
+            width: 103px;
+        }
+        .facts-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 59px 0px 120px 0px;
+        }
+        .product {
+            margin: 0;
+            padding: 90px 37px 173px 37px;
+            hr {
+                margin: 0;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+                gap: 36px;
+            }
+        }
+    }
 }
 
 .service {

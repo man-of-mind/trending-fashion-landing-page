@@ -24,6 +24,7 @@ const Content = () => {
     return (
         <div className={styles['content']}>
             <h1>FACTS &#38; FIGURES</h1>
+            <hr></hr>
             <section className={styles['facts-card']}>
                 <FactsCard bgColor="#D35796" total="15+" category="CLIENTS"/>
                 <FactsCard bgColor="#9256B7" total="1k" category="AWARDS"/>
