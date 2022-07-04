@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Member1 from "../Assets/Images/Member1.svg";
 import Member2 from "../Assets/Images/Member2.svg";
 import Member3 from "../Assets/Images/Member3.svg";
@@ -41,3 +42,25 @@ export const membersMobilePictures = [
         about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa in etiam blandit eleifend ultricies urna nunc donec ultrices.'
     }
 ]
+
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+  }
+  
+  export function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    return windowDimensions;
+  }

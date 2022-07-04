@@ -5,7 +5,7 @@ import Service from "./Service";
 import Member from "./Member";
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
-import { membersPictures, membersMobilePictures } from "../utils";
+import { membersPictures, membersMobilePictures, useWindowDimensions } from "../utils";
 import { ReactComponent as FullStarIcon } from "../../Assets/Icons/FullStar.svg";
 import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg";
 import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
@@ -25,14 +25,28 @@ const Content = () => {
         <Member key={index} member={member.image} name="Kerry Lorem" role="BUSINESS DEVELOPER" about={member.about}/>
     );
 
+    const { width } = useWindowDimensions();
+    let cardWidth = "";
+    let cardHeight = "";
+    let fontSize = "";
+    if (width > 687 && width <= 1100) {
+        cardWidth = "105px";
+        cardHeight = "150px";
+        fontSize = "30px";
+    } else {
+        cardWidth = "185px";
+        cardHeight = "200px";
+        fontSize = "40px";
+    }
+
     return (
         <div className={styles['content']}>
             <h1>FACTS &#38; FIGURES</h1>
             <hr></hr>
             <section className={styles['facts-card']}>
-                <FactsCard bgColor="#D35796" total="15+" category="CLIENTS"/>
-                <FactsCard bgColor="#9256B7" total="1k" category="AWARDS"/>
-                <FactsCard bgColor="#578388" total="10k" category="PROJECTS"/>
+                <FactsCard bgColor="#D35796" total="15+" category="CLIENTS" width={cardWidth} height={cardHeight} fontSize={fontSize}/>
+                <FactsCard bgColor="#9256B7" total="1k" category="AWARDS" width={cardWidth} height={cardHeight} fontSize={fontSize}/>
+                <FactsCard bgColor="#578388" total="10k" category="PROJECTS" width={cardWidth} height={cardHeight} fontSize={fontSize}/>
             </section>
             <div className={styles['product']}>
                 <h1>Our Products</h1>
