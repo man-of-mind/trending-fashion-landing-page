@@ -10,6 +10,7 @@
             margin: 0;
             font-weight: 400;
             font-size: 70px;
+            line-height: 50px;
         }
         hr {
             width: 256px;
@@ -58,6 +59,28 @@
         }
         .fig {
             display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1100px) {
+    .hero {
+        article {
+            width: 45%;
+            padding: 132px 55px 130px 63px;
+            h1 {
+                font-size: 55px;
+            }
+            hr {
+                width: 170px;
+            }
+            p {
+                font-size: 27px;
+                line-height: 47px;
+            }
+        }
+        .fig {
+            width: 55%;
         }
     }
 }

@@ -11,7 +11,7 @@
     h1 {
         margin: 0;
         font-weight: 400;
-        font-size: 60px;
+        font-size: 64px;
         padding-bottom: 40px;
     }
     hr {
@@ -32,6 +32,7 @@
         background: #E5E5E5;
         h1 {
             @extend h1;
+            font-size: 100px;
             padding-bottom: 24px;
         }
         hr {
@@ -242,6 +243,75 @@
                         small {
                             color: rgba(23, 28, 84, 0.5);
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 0px 147px;
+    h1 {
+        font-size: 90px;
+        padding-bottom: 30px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 39px;
+        text-align: center;
+        width: 612px;
+        padding-bottom: 27px;
+        color: #868AA7;
+    }
+    figure {
+        margin: 0;
+        padding-bottom: 118px;
+        svg {
+            padding-right: 25px;
+        }
+    }
+    .ceo-review {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        .arrow-left {
+            padding-left: 196px;
+        }
+        .arrow-right {
+            padding-right: 196px;
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                text-align: center;
+                padding: 0;
+                color: #171C54;
+                line-height: 29px;
+                padding-bottom: 32px;
+            }
+            figure {
+                display: flex;
+                align-items: center;
+                img {
+                    display: block;
+                }
+                figcaption {
+                    padding-left: 43px;
+                    span {
+                        display: block;
+                        padding-bottom: 5px;
+                    }
+                    small {
+                        color: rgba(23, 28, 84, 0.5);
                     }
                 }
             }
@@ -500,6 +570,58 @@
         }
         .detail {
             padding: 0 37px;
+        }
+    }
+}
+
+@media screen and (min-width: 679px) and (max-width: 1100px) {
+    .content {
+        h1 {
+            font-size: 55px;
+        }
+        .product {
+            h1 {
+                font-size: 70px;
+            }
+        }
+        .services {
+            h1 {
+                font-size: 70px;
+            }
+            hr {
+                width: 170px;
+            }
+        }
+        .gallery {
+            padding-top: 130px;
+            h1 {
+                font-size: 70px;
+            }
+            hr {
+                width: 170px;
+            }
+        }
+        .team-members {
+            padding-top: 200px;
+            h1 {
+                font-size: 70px;
+            }
+            hr {
+                width: 170px;
+            }
+        }
+        .reviews {
+            h1 {
+                font-size: 70px;
+            }
+            .ceo-review {
+                .arrow-left {
+                    padding-left: 56px;
+                }
+                .arrow-right {
+                    padding-right: 56px;
+                }
+            }
         }
     }
 }
