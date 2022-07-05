@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Wisteria Serif";
+    src: local("Wisteria"), url("../../fonts/Wisteria/Wisteria.woff") format("woff");
+    font-weight: 400;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -8,6 +14,7 @@
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    font-family: 'Wisteria Serif';
     h1 {
         margin: 0;
         font-weight: 400;

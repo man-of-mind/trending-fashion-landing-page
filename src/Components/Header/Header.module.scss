@@ -1,8 +1,14 @@
-@import url('http://fonts.cdnfonts.com/css/wisteria');
+@font-face {
+    font-family: "Wisteria Serif";
+    src: local("Wisteria"), url("../../fonts/Wisteria/Wisteria.woff") format("woff");
+    font-weight: 400;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Wisteria Serif";
 }
 
 .header-section {
@@ -63,6 +69,7 @@ body {
             p {
                 font-size: 14px;
                 line-height: 15px;
+                width: 47px;
             }
             ul {
                 display: none;
