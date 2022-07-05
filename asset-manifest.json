@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/trending-fashion-landing-page/static/css/main.bb0435c0.css",
+    "main.js": "/trending-fashion-landing-page/static/js/main.b86686e3.js",
+    "static/media/Flower.svg": "/trending-fashion-landing-page/static/media/Flower.3b625012df862cb680bc.svg",
+    "static/media/Frame 42665.svg": "/trending-fashion-landing-page/static/media/Frame 42665.d99f1f0deef5870e92b3.svg",
+    "static/media/Member6.svg": "/trending-fashion-landing-page/static/media/Member6.7b7493672d046cb2ab4044456fb90409.svg",
+    "static/media/Member3.svg": "/trending-fashion-landing-page/static/media/Member3.9c04d6e9df5a675f442781e2fbc5fd50.svg",
+    "static/media/FlowerA1.svg": "/trending-fashion-landing-page/static/media/FlowerA1.f92d0a6545f363702338d098daaa814d.svg",
+    "static/media/Member2.svg": "/trending-fashion-landing-page/static/media/Member2.9eb0743fc2498fdd791bf6f0ae63f677.svg",
+    "static/media/Member1.svg": "/trending-fashion-landing-page/static/media/Member1.5984968052bea58f0c156e97a63323d8.svg",
+    "static/media/Member4.svg": "/trending-fashion-landing-page/static/media/Member4.1358de1b4987258556fb9de2a1389bbc.svg",
+    "static/media/ceo.svg": "/trending-fashion-landing-page/static/media/ceo.c0ee347c4e43d47a981696cf8b041326.svg",
+    "static/media/ProductFlower.svg": "/trending-fashion-landing-page/static/media/ProductFlower.e81a8ff5d90b99f6f14d54e3877093bc.svg",
+    "static/media/FlowerB3.svg": "/trending-fashion-landing-page/static/media/FlowerB3.ab3927e14c886730be558614eae46643.svg",
+    "static/media/circular-std-medium-500.ttf": "/trending-fashion-landing-page/static/media/circular-std-medium-500.3fcb6535e39024a69e30.ttf",
+    "static/media/Member5.svg": "/trending-fashion-landing-page/static/media/Member5.46e562c333f275876cb24a58cde04fba.svg",
+    "static/media/CompanyFlower.svg": "/trending-fashion-landing-page/static/media/CompanyFlower.22ccca26a96069dcb129fb6cc5c7ddb6.svg",
+    "static/media/Wisteria.woff": "/trending-fashion-landing-page/static/media/Wisteria.323d1659fd90c7700880.woff",
+    "static/media/ArrowLeft.svg": "/trending-fashion-landing-page/static/media/ArrowLeft.5eeb15789f65fd500ecf3be6ec3d1e31.svg",
+    "static/media/ArrowRight.svg": "/trending-fashion-landing-page/static/media/ArrowRight.2d63bf0d1749bd395aa5d3f5a3e66f65.svg",
+    "static/media/Instagram.svg": "/trending-fashion-landing-page/static/media/Instagram.34ca0cbb3f30e1a9a4e17ceca95f9a09.svg",
+    "static/media/Twitter.svg": "/trending-fashion-landing-page/static/media/Twitter.65a00f1d84d32afb2f11d53a00c7c6f4.svg",
+    "static/media/HalfStar.svg": "/trending-fashion-landing-page/static/media/HalfStar.c00a2dd34e4428900d260ee60fb4c2a4.svg",
+    "static/media/ServiceIcon.svg": "/trending-fashion-landing-page/static/media/ServiceIcon.d4d29d9978c5bde79de87127e842d4bb.svg",
+    "static/media/FullStar.svg": "/trending-fashion-landing-page/static/media/FullStar.a46b9d2026af5766f1918b4de5ff94f0.svg",
+    "static/media/Twitter2.svg": "/trending-fashion-landing-page/static/media/Twitter2.aec4198e0142c12991135379e0ea8780.svg",
+    "static/media/Instagram2.svg": "/trending-fashion-landing-page/static/media/Instagram2.15eb48de7ee8d8c1f8da8d53b9a0ca14.svg",
+    "index.html": "/trending-fashion-landing-page/index.html",
+    "static/media/ArrowDown.svg": "/trending-fashion-landing-page/static/media/ArrowDown.c671fe97eaadad6a4c189b00b09a4d7f.svg",
+    "static/media/Facebook2.svg": "/trending-fashion-landing-page/static/media/Facebook2.3f0d81cb134056857e5566085dd76476.svg",
+    "static/media/Facebook.svg": "/trending-fashion-landing-page/static/media/Facebook.c6349fc80cb7395d74202a81137b4742.svg",
+    "static/media/Hamburger.svg": "/trending-fashion-landing-page/static/media/Hamburger.68c47cba9d99f2871285d4f3ecd3391e.svg",
+    "main.bb0435c0.css.map": "/trending-fashion-landing-page/static/css/main.bb0435c0.css.map",
+    "main.b86686e3.js.map": "/trending-fashion-landing-page/static/js/main.b86686e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb0435c0.css",
+    "static/js/main.b86686e3.js"
+  ]
+}
