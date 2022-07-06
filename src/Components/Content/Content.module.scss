@@ -28,7 +28,7 @@
     }
     .facts-card {
         display: grid;
-        padding: 136px 0px 247px 50px;
+        padding: 136px 0px 247px 0px;
         grid-auto-flow: column;
         grid-auto-columns: 30%;
         gap: 50px;
@@ -126,19 +126,21 @@
             margin: 0 0 75px 150px;
         }
         .section-one {
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: 36%;
-            overflow-x: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            overflow-x: hidden;
             -ms-overflow-style: none;
             scrollbar-width: none;
             overscroll-behavior-inline: contain;
-            width: 100vw;
+            padding: 0px;
+            cursor: pointer;
             figure {
                 border-radius: 13px;
-                margin: 0 27px;
+                margin: 0;
                 img {
-                    width: 100%;
+                    width: 512px;
+                    height: 422px;
                 }
             }
         }

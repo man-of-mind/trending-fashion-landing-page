@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import FactsCard from "../Cards/FactsCard";
 import styles from './Content.module.scss';
 import Service from "./Service";
 import Member from "./Member";
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
-import { membersPictures, membersMobilePictures, useWindowDimensions } from "../utils";
+import { membersPictures, membersMobilePictures, useWindowDimensions, flowerImages } from "../utils";
 import { ReactComponent as FullStarIcon } from "../../Assets/Icons/FullStar.svg";
 import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg";
 import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
 import { ReactComponent as ArrowRightIcon } from "../../Assets/Icons/ArrowRight.svg";
 import CEO from "../../Assets/Images/ceo.svg";
-import FlowerGallery1 from "../../Assets/Images/FlowerA1.svg";
 import FlowerGallery2 from "../../Assets/Images/FlowerB3.svg";
 
 
@@ -38,6 +37,31 @@ const Content = () => {
         cardHeight = "200px";
         fontSize = "40px";
     }
+
+    const listRef:any = useRef(null);
+
+    const [flowersArrray, setFlowers] = useState(flowerImages);
+    
+    const clickMe = () => {
+        if (listRef.current) {
+            listRef.current.scrollBy({
+                top: 0,
+                left: -200,
+                behavior: "smooth",
+            });
+        }
+        const lastFlowerImage = flowersArrray[flowersArrray.length - 1];
+        setFlowers([ ...flowersArrray, lastFlowerImage ]);
+    }
+
+    let flowers = flowersArrray.map((flower, index) => {
+        return(
+            <figure onClick={clickMe} key={index}>
+                <img src={flower.image} alt="flower gallery" />
+            </figure>
+        );
+    })
+
 
     return (
         <div className={styles['content']}>
@@ -95,19 +119,8 @@ const Content = () => {
             <div className={styles['gallery']}>
                 <h1>Gallery</h1>
                 <hr></hr>
-                <section className={styles['section-one']}>
-                    <figure>
-                        <img src={FlowerGallery1} alt="flower gallery" />
-                    </figure>
-                    <figure>
-                        <img src={FlowerGallery1} alt="flower gallery" />
-                    </figure>
-                    <figure>
-                        <img src={FlowerGallery1} alt="flower gallery" />
-                    </figure>
-                    <figure>
-                        <img src={FlowerGallery1} alt="flower gallery" />
-                    </figure>
+                <section className={styles['section-one']} ref={listRef}>
+                   {flowers}
                 </section>
                 <section className={styles['section-two']}>
                     <figure>
