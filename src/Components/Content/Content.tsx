@@ -51,7 +51,9 @@ const Content = () => {
             });
         }
         const lastFlowerImage = flowersArrray[flowersArrray.length - 1];
-        setFlowers([ ...flowersArrray, lastFlowerImage ]);
+        flowersArrray.pop();
+        setFlowers([ lastFlowerImage, ...flowersArrray ]);
+        console.log(flowersArrray)
     }
 
     let flowers = flowersArrray.map((flower, index) => {

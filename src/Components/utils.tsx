@@ -6,6 +6,7 @@ import Member4 from "../Assets/Images/Member4.svg";
 import Member5 from "../Assets/Images/Member5.svg";
 import Member6 from "../Assets/Images/Member6.svg";
 import FlowerGallery1 from "../Assets/Images/FlowerA1.svg";
+import FlowerGallery2 from "../Assets/Images/FlowerB3.svg"
 
 
 export const membersPictures = [
@@ -74,7 +75,7 @@ function getWindowDimensions() {
             image: FlowerGallery1
         },
         {
-            image: FlowerGallery1
+            image: FlowerGallery2
         },
         {
             image: FlowerGallery1
@@ -83,6 +84,6 @@ function getWindowDimensions() {
             image: FlowerGallery1
         },
         {
-            image: FlowerGallery1
+            image: FlowerGallery2
         },
   ]
