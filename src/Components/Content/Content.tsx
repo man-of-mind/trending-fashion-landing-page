@@ -5,14 +5,12 @@ import Service from "./Service";
 import Member from "./Member";
 import ProductFlower from '../../Assets/Images/ProductFlower.svg';
 import CompanyFlower from '../../Assets/Images/CompanyFlower.svg';
-import { membersPictures, membersMobilePictures, useWindowDimensions, flowerImages } from "../utils";
+import { membersPictures, membersMobilePictures, useWindowDimensions, flowerImages, flowerImagesSection2 } from "../utils";
 import { ReactComponent as FullStarIcon } from "../../Assets/Icons/FullStar.svg";
 import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg";
 import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
 import { ReactComponent as ArrowRightIcon } from "../../Assets/Icons/ArrowRight.svg";
 import CEO from "../../Assets/Images/ceo.svg";
-import FlowerGallery2 from "../../Assets/Images/FlowerB3.svg";
-
 
 
 const Content = () => {
@@ -40,9 +38,10 @@ const Content = () => {
 
     const listRef:any = useRef(null);
 
-    const [flowersArrray, setFlowers] = useState(flowerImages);
+    const [carouselImages1, setCarouselImages] = useState(flowerImages);
+    const [carouselImages2, setCarouselImages2] = useState(flowerImagesSection2);
     
-    const clickMe = () => {
+    const ScrollLeft = () => {
         if (listRef.current) {
             listRef.current.scrollBy({
                 top: 0,
@@ -50,17 +49,44 @@ const Content = () => {
                 behavior: "smooth",
             });
         }
-        const lastFlowerImage = flowersArrray[flowersArrray.length - 1];
-        flowersArrray.pop();
-        setFlowers([ lastFlowerImage, ...flowersArrray ]);
-        console.log(flowersArrray)
+        const lastFlowerImage = carouselImages1[carouselImages1.length - 1];
+        carouselImages1.pop();
+        setCarouselImages([ lastFlowerImage, ...carouselImages1 ]);
     }
 
-    let flowers = flowersArrray.map((flower, index) => {
-        return(
-            <figure onClick={clickMe} key={index}>
-                <img src={flower.image} alt="flower gallery" />
-            </figure>
+    const ScrollRight = () => {
+        if (listRef.current) {
+            listRef.current.scrollBy({
+                top: 0,
+                left: -200,
+                behavior: "smooth",
+            });
+        }
+        const lastFlowerImage = carouselImages2[carouselImages2.length - 1];
+        carouselImages2.pop();
+        setCarouselImages2([ lastFlowerImage, ...carouselImages2 ]);
+    }
+
+    let flowers = carouselImages1.map((flower, index) => {
+        const style = {
+            background: `url(${flower.image})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backroundRepeat: 'no-repeat'
+            }   
+        return (
+          <div style={style} key={index} className={styles['slider-child']}></div>
+        );    
+    })
+
+    let carouselFlowers2 = carouselImages2.map((flower, index) => {
+        const style = {
+            background: `url(${flower.image})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+        }   
+        return (
+            <div style={style} key={index} className={styles['slider-child']}></div>
         );
     })
 
@@ -125,18 +151,7 @@ const Content = () => {
                    {flowers}
                 </section>
                 <section className={styles['section-two']}>
-                    <figure>
-                        <img src={FlowerGallery2} alt="flower gallery" />
-                    </figure>
-                    <figure>
-                        <img src={FlowerGallery2} alt="flower gallery" />
-                    </figure>
-                    <figure>
-                        <img src={FlowerGallery2} alt="flower gallery" />
-                    </figure>
-                    <figure>
-                        <img src={FlowerGallery2} alt="flower gallery" />
-                    </figure>
+                    {carouselFlowers2}
                 </section>
             </div>
             <div className={styles['team-members']}>

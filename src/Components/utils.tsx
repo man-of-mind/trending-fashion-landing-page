@@ -5,8 +5,11 @@ import Member3 from "../Assets/Images/Member3.svg";
 import Member4 from "../Assets/Images/Member4.svg";
 import Member5 from "../Assets/Images/Member5.svg";
 import Member6 from "../Assets/Images/Member6.svg";
-import FlowerGallery1 from "../Assets/Images/FlowerA1.svg";
-import FlowerGallery2 from "../Assets/Images/FlowerB3.svg"
+import FlowerA1 from "../Assets/Images/FlowerA1.svg";
+import FlowerA2 from "../Assets/Images/FlowerA2.svg";
+import FlowerB3 from "../Assets/Images/FlowerB3.svg";
+import FlowerB2 from "../Assets/Images/FlowerB2.svg";
+import FlowerB1 from "../Assets/Images/FlowerB1.svg";
 
 
 export const membersPictures = [
@@ -67,23 +70,26 @@ function getWindowDimensions() {
     return windowDimensions;
   }
 
-  export const flowerImages = [
+export const flowerImages = [
         {
-            image: FlowerGallery1
+            image: FlowerB3
         },
         {
-            image: FlowerGallery1
+            image: FlowerA1
         },
         {
-            image: FlowerGallery2
-        },
-        {
-            image: FlowerGallery1
-        },
-        {
-            image: FlowerGallery1
-        },
-        {
-            image: FlowerGallery2
-        },
-  ]
+            image: FlowerA2
+        }
+]
+
+export const flowerImagesSection2 = [
+    {
+        image: FlowerB1
+    },
+    {
+        image: FlowerB2
+    },
+    {
+        image: FlowerB3
+    }
+]
