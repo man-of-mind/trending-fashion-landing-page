@@ -10,6 +10,8 @@ import { ReactComponent as FullStarIcon } from "../../Assets/Icons/FullStar.svg"
 import { ReactComponent as HalfStarIcon } from "../../Assets/Icons/HalfStar.svg";
 import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.svg";
 import { ReactComponent as ArrowRightIcon } from "../../Assets/Icons/ArrowRight.svg";
+import { ReactComponent as PrevIcon } from "../../Assets/Icons/Prev.svg";
+import { ReactComponent as NextIcon } from "../../Assets/Icons/Next.svg";
 import CEO from "../../Assets/Images/ceo.svg";
 
 
@@ -41,52 +43,45 @@ const Content = () => {
     const [carouselImages1, setCarouselImages] = useState(flowerImages);
     const [carouselImages2, setCarouselImages2] = useState(flowerImagesSection2);
     
-    const ScrollLeft = () => {
+    const scrollLeft = () => {
         if (listRef.current) {
             listRef.current.scrollBy({
                 top: 0,
-                left: -200,
+                right: 200,
                 behavior: "smooth",
             });
         }
         const lastFlowerImage = carouselImages1[carouselImages1.length - 1];
         carouselImages1.pop();
-        setCarouselImages([ lastFlowerImage, ...carouselImages1 ]);
+        setCarouselImages((state) => [ lastFlowerImage, ...state ]);
     }
 
-    const ScrollRight = () => {
+    const scrollRight = () => {
         if (listRef.current) {
             listRef.current.scrollBy({
                 top: 0,
-                left: -200,
+                left: 200,
                 behavior: "smooth",
             });
         }
         const lastFlowerImage = carouselImages2[carouselImages2.length - 1];
         carouselImages2.pop();
-        setCarouselImages2([ lastFlowerImage, ...carouselImages2 ]);
+        setCarouselImages2((state) => [ lastFlowerImage, ...state ]);
     }
 
     let flowers = carouselImages1.map((flower, index) => {
-        const style = {
-            background: `url(${flower.image})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover',
-            backroundRepeat: 'no-repeat'
-            }   
         return (
-          <div style={style} key={index} className={styles['slider-child']}></div>
+            <div key={index} className={styles['slider-child']}>
+                <img src={flower.image} alt="flower" />
+            </div>
         );    
     })
 
-    let carouselFlowers2 = carouselImages2.map((flower, index) => {
-        const style = {
-            background: `url(${flower.image})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover'
-        }   
+    let carouselFlowers2 = carouselImages2.map((flower, index) => {   
         return (
-            <div style={style} key={index} className={styles['slider-child']}></div>
+            <div key={index} className={styles['slider-child']}>
+                <img src={flower.image} alt="flower" />
+            </div>
         );
     })
 
@@ -147,12 +142,18 @@ const Content = () => {
             <div className={styles['gallery']}>
                 <h1>Gallery</h1>
                 <hr></hr>
-                <section className={styles['section-one']} ref={listRef}>
-                   {flowers}
-                </section>
-                <section className={styles['section-two']}>
-                    {carouselFlowers2}
-                </section>
+                <div className={styles['flowers-container']}>
+                    <PrevIcon className={styles['icon-prev']} onClick={scrollLeft}/>
+                    <section className={styles['section-one']} ref={listRef}>
+                        {flowers}
+                    </section>
+                </div>
+                <div className={styles['flowers-container']}>
+                    <section className={styles['section-two']} ref={listRef}>
+                        {carouselFlowers2}
+                    </section>
+                    <NextIcon className={styles['icon-next']} onClick={scrollRight}/>
+                </div>
             </div>
             <div className={styles['team-members']}>
                 <h1>Our Team</h1>

@@ -7,6 +7,7 @@ import Member5 from "../Assets/Images/Member5.svg";
 import Member6 from "../Assets/Images/Member6.svg";
 import FlowerA1 from "../Assets/Images/FlowerA1.svg";
 import FlowerA2 from "../Assets/Images/FlowerA2.svg";
+import FlowerA3 from "../Assets/Images/CompanyFlower.svg";
 import FlowerB3 from "../Assets/Images/FlowerB3.svg";
 import FlowerB2 from "../Assets/Images/FlowerB2.svg";
 import FlowerB1 from "../Assets/Images/FlowerB1.svg";
@@ -72,14 +73,14 @@ function getWindowDimensions() {
 
 export const flowerImages = [
         {
-            image: FlowerB3
-        },
-        {
             image: FlowerA1
         },
         {
+            image: FlowerB2
+        },
+        {
             image: FlowerA2
-        }
+        },
 ]
 
 export const flowerImagesSection2 = [
