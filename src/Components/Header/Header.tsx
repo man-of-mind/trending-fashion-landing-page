@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Header.module.scss";
 import { ReactComponent as ArrowDownIcon } from "../../Assets/Icons/ArrowDown.svg";
 import { ReactComponent as Menu } from "../../Assets/Icons/Hamburger.svg";
+import { ReactComponent as Arrow } from "../../Assets/Icons/Arrow.svg";
 
 const Header = () => {
     return (
@@ -12,7 +13,10 @@ const Header = () => {
                     <li>Home</li>
                     <li>About me</li>
                     <li>Projects</li>
-                    <li>Contact me</li>
+                    <li>
+                        <span>Contact me</span>
+                        <Arrow style={{marginLeft: "10px", paddingBottom: "5px"}}/>
+                    </li>
                 </ul>
                 <i>
                     <Menu />

@@ -12,6 +12,7 @@ import { ReactComponent as ArrowLeftIcon } from "../../Assets/Icons/ArrowLeft.sv
 import { ReactComponent as ArrowRightIcon } from "../../Assets/Icons/ArrowRight.svg";
 import { ReactComponent as PrevIcon } from "../../Assets/Icons/Prev.svg";
 import { ReactComponent as NextIcon } from "../../Assets/Icons/Next.svg";
+import { ReactComponent as Arrow } from "../../Assets/Icons/Arrow.svg";
 import CEO from "../../Assets/Images/ceo.svg";
 
 
@@ -110,7 +111,10 @@ const Content = () => {
                             elit. Massa in etiam blandit eleifend ultricies urna nunc donec 
                             ultrices.
                         </p>
-                        <button>View</button>
+                        <button>
+                            <span>View</span>
+                            <Arrow style={{paddingLeft: "10px", paddingBottom: "7px"}}/>
+                        </button>
                     </section>
                 </div>
                 <div className={styles['grid-container-2']}>
@@ -122,7 +126,10 @@ const Content = () => {
                             elit. Massa in etiam blandit eleifend ultricies urna nunc donec 
                             ultrices.
                         </p>
-                        <button>View</button>
+                        <button>
+                            <span>View</span>
+                            <Arrow style={{paddingLeft: "10px", paddingBottom: "7px"}}/>
+                        </button>
                     </section>
                     <figure>
                         <img src={CompanyFlower} alt="product flower" />
