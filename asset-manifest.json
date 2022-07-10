@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trending-fashion-landing-page/static/css/main.e3794df2.css",
-    "main.js": "/trending-fashion-landing-page/static/js/main.3f6ba316.js",
+    "main.css": "/trending-fashion-landing-page/static/css/main.4ec1b341.css",
+    "main.js": "/trending-fashion-landing-page/static/js/main.fbf48652.js",
     "static/media/Flower.svg": "/trending-fashion-landing-page/static/media/Flower.3b625012df862cb680bc.svg",
     "static/media/Frame 42665.svg": "/trending-fashion-landing-page/static/media/Frame 42665.d99f1f0deef5870e92b3.svg",
     "static/media/FlowerB1.svg": "/trending-fashion-landing-page/static/media/FlowerB1.6055b56e4b7dcd921c94a82cb683d912.svg",
@@ -28,6 +28,7 @@
     "static/media/ServiceIcon.svg": "/trending-fashion-landing-page/static/media/ServiceIcon.d4d29d9978c5bde79de87127e842d4bb.svg",
     "static/media/FullStar.svg": "/trending-fashion-landing-page/static/media/FullStar.a46b9d2026af5766f1918b4de5ff94f0.svg",
     "static/media/Twitter2.svg": "/trending-fashion-landing-page/static/media/Twitter2.aec4198e0142c12991135379e0ea8780.svg",
+    "static/media/Arrow.svg": "/trending-fashion-landing-page/static/media/Arrow.7d6f439672c7e19e9ad0161dee82ae4a.svg",
     "static/media/Instagram2.svg": "/trending-fashion-landing-page/static/media/Instagram2.15eb48de7ee8d8c1f8da8d53b9a0ca14.svg",
     "static/media/Prev.svg": "/trending-fashion-landing-page/static/media/Prev.b9573fcbfd12ce9ce81a5accc9860fac.svg",
     "static/media/Next.svg": "/trending-fashion-landing-page/static/media/Next.62b08ef72eb840fa35cbe6b96ef4b7ad.svg",
@@ -36,11 +37,11 @@
     "static/media/Facebook2.svg": "/trending-fashion-landing-page/static/media/Facebook2.3f0d81cb134056857e5566085dd76476.svg",
     "static/media/Facebook.svg": "/trending-fashion-landing-page/static/media/Facebook.c6349fc80cb7395d74202a81137b4742.svg",
     "static/media/Hamburger.svg": "/trending-fashion-landing-page/static/media/Hamburger.68c47cba9d99f2871285d4f3ecd3391e.svg",
-    "main.e3794df2.css.map": "/trending-fashion-landing-page/static/css/main.e3794df2.css.map",
-    "main.3f6ba316.js.map": "/trending-fashion-landing-page/static/js/main.3f6ba316.js.map"
+    "main.4ec1b341.css.map": "/trending-fashion-landing-page/static/css/main.4ec1b341.css.map",
+    "main.fbf48652.js.map": "/trending-fashion-landing-page/static/js/main.fbf48652.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3794df2.css",
-    "static/js/main.3f6ba316.js"
+    "static/css/main.4ec1b341.css",
+    "static/js/main.fbf48652.js"
   ]
 }
