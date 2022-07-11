@@ -40,6 +40,9 @@ body {
             display: none;
         }
     }
+    .mb-menu {
+        display: none;
+    }
     section {
         display: flex;
         flex-direction: column;
@@ -65,7 +68,8 @@ body {
 @media screen and (max-width: 678px) {
     .header-section {
         nav {
-            padding: 36px 52px 240px 34px;
+            padding: 36px 52px 0px 34px;
+            margin-bottom: 0;
             p {
                 font-size: 14px;
                 line-height: 15px;
@@ -78,7 +82,19 @@ body {
                 display: inline-block;
             }
         }
+        .mb-menu {
+            display: flex;
+            ul {
+                list-style: none;
+                margin-top: 0;
+                margin-left: auto;
+                padding-right: 20px;
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
         section {
+            padding-top: 240px;
             h1 {
                 padding: 0px 0px 122px 0px;
                 font-size: 64px;
