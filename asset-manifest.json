@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/trending-fashion-landing-page/static/css/main.4ec1b341.css",
-    "main.js": "/trending-fashion-landing-page/static/js/main.fbf48652.js",
+    "main.css": "/trending-fashion-landing-page/static/css/main.420365ea.css",
+    "main.js": "/trending-fashion-landing-page/static/js/main.f4dc8b96.js",
     "static/media/Flower.svg": "/trending-fashion-landing-page/static/media/Flower.3b625012df862cb680bc.svg",
     "static/media/Frame 42665.svg": "/trending-fashion-landing-page/static/media/Frame 42665.d99f1f0deef5870e92b3.svg",
     "static/media/FlowerB1.svg": "/trending-fashion-landing-page/static/media/FlowerB1.6055b56e4b7dcd921c94a82cb683d912.svg",
@@ -37,11 +37,11 @@
     "static/media/Facebook2.svg": "/trending-fashion-landing-page/static/media/Facebook2.3f0d81cb134056857e5566085dd76476.svg",
     "static/media/Facebook.svg": "/trending-fashion-landing-page/static/media/Facebook.c6349fc80cb7395d74202a81137b4742.svg",
     "static/media/Hamburger.svg": "/trending-fashion-landing-page/static/media/Hamburger.68c47cba9d99f2871285d4f3ecd3391e.svg",
-    "main.4ec1b341.css.map": "/trending-fashion-landing-page/static/css/main.4ec1b341.css.map",
-    "main.fbf48652.js.map": "/trending-fashion-landing-page/static/js/main.fbf48652.js.map"
+    "main.420365ea.css.map": "/trending-fashion-landing-page/static/css/main.420365ea.css.map",
+    "main.f4dc8b96.js.map": "/trending-fashion-landing-page/static/js/main.f4dc8b96.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec1b341.css",
-    "static/js/main.fbf48652.js"
+    "static/css/main.420365ea.css",
+    "static/js/main.f4dc8b96.js"
   ]
 }
